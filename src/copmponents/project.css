@@ -1,0 +1,83 @@
+.Main-Project-Section {
+    width: 370px;
+    min-height: 500px;
+    box-shadow: 0px 1px 0px 0px rgb(165, 163, 163);
+    border: 0;
+    /* background-color: #2d3134; */
+    background-color: white;
+    /* row-gap: 6px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.project-image {
+    position: relative;
+    z-index: 3;
+    bottom: 190px;
+    width: 246px;
+    height: 154px;
+}
+
+.buttons-forcode-cont {
+    display: flex;
+    column-gap: 20px
+}
+
+.code-button {
+    width: 90px;
+    height: 27px;
+    /* border-style: solid;
+    border-radius: 3px;
+    border-color: #2d3134;
+    background-color: transparent; */
+    z-index: 1;
+    color: rgba(67, 166, 238, 1);
+    /* background-image: radial-gradient(circle 465px at -15.1% -25%, rgba(17, 130, 193, 1) 0%, rgba(67, 166, 238, 1) 49%, rgba(126, 203, 244, 1) 90.2%); */
+    /* color: radial-gradient(circle 465px at -15.1% -25%, rgba(17, 130, 193, 1) 0%, rgba(67, 166, 238, 1) 49%, rgba(126, 203, 244, 1) 90.2%) ; */
+    border: none;
+    transition: all 1000ms;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid rgba(67, 166, 238, 1);
+
+}
+
+.code-button:hover {
+    /* background-color: #2d3134;
+    color: white;
+    border-color: #2d3134;
+    cursor: pointer; */
+    cursor: pointer;
+    color: #ffffff;
+    transform: scale(1.0);
+
+}
+
+.code-button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(67, 166, 238, 1);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.code-button:hover::before{
+    width: 250%;
+}
+
+.project-title {
+    color: #2d3134;
+}
+
+.project-text {
+    color: #2d3134;
+    font-size: smaller;
+}
