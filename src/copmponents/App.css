@@ -64,7 +64,7 @@ body {
   /* height: 660px; */
 
   .background {
-    background-image: url(C:\Users\gilde\OneDrive\fullstack\Portfolio\PortFolio\src\copmponents\IMAGES\rm183-wan-11.jpg);
+    background-image: url('./IMAGES/blackbackground.jpg');
     background-size:cover;
     min-height: 100vh;
   }
